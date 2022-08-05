@@ -2,21 +2,28 @@
   "expo": {
     "name": "akalli-app",
     "slug": "akalli-app",
-    "version": "1.0.0",
+    "owner": "akalli",
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
+    "androidStatusBar": {
+      "backgroundColor": "#6A59AA",
+      "translucent": true
+    },
+    "packagerOpts": {
+      "sourceExts": ["cjs"]
+    },
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#6A59AA"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -24,10 +31,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "userInterfaceStyle": "light",
+      "versionCode": 1,
+      "permissions": [],
+      "package": "akalli.App"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "flipperHack": "React native package is running"
     }
   }
 }
