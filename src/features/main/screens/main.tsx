@@ -1,6 +1,20 @@
-import { Text } from "@akalli/components";
+import { Center, Text } from "@akalli/components";
+import { useAppDispatch } from "@config/store";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { authSlice } from "../../auth/helpers/redux";
 
 export const Main = () => {
-  console.log("entrou na main");
-  return <Text mt="200px">I am an assistant page</Text>;
+  const dispatch = useAppDispatch();
+  const isLoggedIn = useSelector((state: any) => state.auth.isLoggedIn);
+
+  useEffect((): void => {
+    dispatch(authSlice.actions.login());
+  }, []);
+
+  return (
+    <Center height="100%">
+      <Text>{isLoggedIn ? "Logged in" : "Not logged in"}</Text>
+    </Center>
+  );
 };
