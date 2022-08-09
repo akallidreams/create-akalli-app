@@ -30,7 +30,7 @@
     "build:internal": "eas build --profile preview --platform android"
   },
   "dependencies": {
-    "@akalli/components": "^0.1.4",
+    "@akalli/components": "^0.1.5",
     "@akalli/navigation": "^0.1.2",
     "@akalli/state": "^0.0.3",
     "@react-native-async-storage/async-storage": "~1.17.3",
