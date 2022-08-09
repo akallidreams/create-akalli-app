@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test Main Screen should render the title value 1`] = `
+<View
+  height="100%"
+  style={
+    Array [
+      Object {
+        "height": "100%",
+      },
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    testID="dti-title"
+  >
+    Logged in
+  </Text>
+</View>
+`;
