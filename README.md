@@ -1,89 +1,59 @@
-# One Tax Docs
+# Warning
 
-This is a basic documentation to explain the decisions, utilities and reuse of special components in this app.
+This is a beta test and it may need some work until be good enough to trust, use it testing if everything works as expected and if you find any bug or have doubts create an issue on this repository.
 
-## Code style:
+# Quick start
 
-1. We decided to make our components with const instead of functions.
+This is a framework that uses a colection of libraries to solve the most common configuration problems in the UI of an expo/react-native app. It already starts with a intermediate configuration and a folder structure that organizes and makes easier to scale. If you want to create a small project this may not be necessary, but you can use some or all of the libraries independent of this template.
 
-```ts
-interface Props {
-  myProp: string
-}
+## Libraries available:
 
-const MyComponent = (props: Props) => <Text>{props.myProp}</Text>
+@akalli/state - Used to manage state and persistence with redux toolkit.
+@akalli/navigation - Easier way to implement routes using react-navigation.
+@akalli/components - Smart components that makes easier and descriptive the construction of UIs.
+@akalli/icons - Some icons available to use, following our design system.
+
+## Instalation
+
+`expo init my-app --template @akalli/create-akalli-app`
+
+## Archtecture
+
+This repository has been dividing in two important categories `config` and `features`.
+
+### config
+
+The `config` folder has the most vital configurations such as router, store and theming.
+
+## features
+
+The `features` folder is were you gonna work more. It subdivides in 3 independent categories that are `main`, `auth` and `assistant`. Each one of these folders are its own nucleus of code, with `helpers`, `intl`, `tests`, `services`, `schemas`, `types`, `redux slices`, `screens`, `components` and `styling`. It is up to you choose wich files will be created to help the screens flow. you can also create new files inside helpers or delete not used ones, remember everything here except the config folder is a **suggestion**. But i highly recommend follow the design patterns implemented here, due the fact they have prooved many times be good up scale challenges.
+
+1. main - has the main features of the app and should be the most important screens like `dashboard`, `home`, `profile` and etc.
+2. Assistant - Has the assistant screens, like `account`, `therms` and etc
+3. Auth - Has the not authenticated screens and should be used on the screens out of the app.
+
+## Example of a screen using @akalli/components
+
+Example:
+
+```tsx
+import { HSection, Text } from "@akalli/components";
+
+export const MyComponent = () => {
+  return (
+    <HSection bg="secondary" mt="10px">
+      <Text color="grey" fontSize="lg">
+        My text
+      </Text>
+      <Text color="primary" fontSize="14px">
+        My text
+      </Text>
+    </HSection>
+  );
+};
 ```
 
-2. This app is made with strong typing using Typescript for files and components.
+## Scripts
 
-3. We are using standardJS with ESLint and Prettier to style the code.
-
-4. We are using NativeBase and file pattern instead of folders.
-
-## Architecture
-
-#### components
-
-1. **What is it for...**
-   Our components were made to be reused as much as possible, since all the pages are very similar and follow the same color pattern, paddings, sizes and infos.
-
-#### hooks
-
-1. **What is it for...**
-
-- This folder is meant to contain all custom hooks
-
-#### intl
-
-1. **What is it for...**
-
-- This folder is meant for the App's internationalization/translation, so every string is put on there.
-
-#### schemas
-
-1. **What is it for...**
-
-- What we call schemas are organized objects in a very easy and logical way. The error messages, the regexpatterns, the placeholders, firebase errors etc.
-
-#### screens
-
-1. **What is it for and what does each one...**
-
-- This folder is for organizing each screen in a file with its name.
-
-#### services
-
-1. **What is it for...**
-
-- Are the controller files that integrate the FE with the APIs.
-
-#### store
-
-1. **What is it for...**
-
-- Is meant for storing all state, actions and slices.
-
-#### theme
-
-1. **What is it for...**
-
-- Is meant to have all possible themes with the font colors, component colors, etc. Light theme, dark theme, original theme, screen theme etc.
-
-#### utils
-
-1. **What is it for...**
-
-- Is meant to have all auxiliary functions (utils), like Regex Patterns.
-
-_Made with love, enjoy._
-
-<!--
-useEffect(() => {
-    const connectRevenueCat = async () => {
-      Purchases.setDebugLogsEnabled(true)
-      if (Platform.OS === 'android') {
-        await Purchases.setup('goog_gAKcYnmjaKvTKEGgjKrTaMTpiQd')
-      }
-    }
-    connectRevenueCat()
-  }) -->
+This template has EAS configuration set for expo projects. If you run `npm start` you gonna run the `expo start --clear --dev-client` and will only work if you generate a build and install the app using `npm run build:dev`.

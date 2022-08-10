@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "akalli-app",
-    "slug": "akalli-app",
+    "name": "create-akalli-app",
+    "slug": "cra",
     "owner": "akalli",
     "version": "0.0.1",
     "orientation": "portrait",
