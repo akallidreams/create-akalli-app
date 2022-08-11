@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660141531852" clover="3.2.0">
-  <project timestamp="1660141531852" name="All files">
-    <metrics statements="29" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="0" elements="40" coveredelements="0" complexity="0" loc="29" ncloc="29" packages="12" files="28" classes="28"/>
+<coverage generated="1660148537593" clover="3.2.0">
+  <project timestamp="1660148537593" name="All files">
+    <metrics statements="30" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="7" elements="43" coveredelements="23" complexity="0" loc="30" ncloc="30" packages="12" files="29" classes="29"/>
     <package name="akalli-app">
       <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="App.tsx" path="/home/danilosilvadev/dev/@akalli/akalli-app/App.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
       </file>
     </package>
     <package name="akalli-app.src.config">
-      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="AkalliProvider.tsx" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/config/AkalliProvider.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="15" count="2" type="cond" truecount="1" falsecount="1"/>
+      </file>
       <file name="index.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/config/index.ts">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
@@ -21,12 +26,12 @@
         <line num="4" count="0" type="stmt"/>
       </file>
       <file name="store.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/config/store.ts">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="5" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
       <file name="theme.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/config/theme.ts">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
     <package name="akalli-app.src.features">
@@ -76,7 +81,7 @@
       </file>
     </package>
     <package name="akalli-app.src.features.auth.helpers">
-      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/features/auth/helpers/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
@@ -85,9 +90,9 @@
         <line num="3" count="0" type="stmt"/>
       </file>
       <file name="redux.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/features/auth/helpers/redux.ts">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
       <file name="schemas.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/features/auth/helpers/schemas.ts">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -132,20 +137,19 @@
       </file>
     </package>
     <package name="akalli-app.src.features.main.screens">
-      <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
       <file name="Main.tsx" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/features/main/screens/Main.tsx">
-        <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="77" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="53" count="9" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/danilosilvadev/dev/@akalli/akalli-app/src/features/main/screens/index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
