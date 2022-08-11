@@ -2,7 +2,7 @@
   "name": "@akalli/create-akalli-app",
   "description": "A starter kit for creating Akalli apps",
   "bin": "./bin/akalli-cli.js",
-  "version": "0.0.4",
+  "version": "0.0.9",
   "main": "node_modules/expo/AppEntry.js",
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
@@ -132,5 +132,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "author": "dsilva@akalli.com.br"
 }
