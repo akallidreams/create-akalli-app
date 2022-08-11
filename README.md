@@ -8,10 +8,13 @@ This is a framework that uses a colection of libraries to solve the most common 
 
 ## Libraries available:
 
-@akalli/state - Used to manage state and persistence with redux toolkit.
-@akalli/navigation - Easier way to implement routes using react-navigation.
-@akalli/components - Smart components that makes easier and descriptive the construction of UIs.
-@akalli/icons - Some icons available to use, following our design system.
+- **@akalli/state** - Used to manage state and persistence with redux toolkit.
+
+- **@akalli/navigation** - Easier way to implement routes using react-navigation.
+
+- **@akalli/components** - Smart components that makes easier and descriptive the construction of UIs.
+
+- **@akalli/icons** - Some icons available to use, following our design system.
 
 ## Instalation
 
@@ -25,7 +28,7 @@ This repository has been dividing in two important categories `config` and `feat
 
 The `config` folder has the most vital configurations such as router, store and theming.
 
-## features
+### features
 
 The `features` folder is were you gonna work more. It subdivides in 3 independent categories that are `main`, `auth` and `assistant`. Each one of these folders are its own nucleus of code, with `helpers`, `intl`, `tests`, `services`, `schemas`, `types`, `redux slices`, `screens`, `components` and `styling`. It is up to you choose wich files will be created to help the screens flow. you can also create new files inside helpers or delete not used ones, remember everything here except the config folder is a **suggestion**. But i highly recommend follow the design patterns implemented here, due the fact they have prooved many times be good up scale challenges.
 
@@ -33,7 +36,7 @@ The `features` folder is were you gonna work more. It subdivides in 3 independen
 2. Assistant - Has the assistant screens, like `account`, `therms` and etc
 3. Auth - Has the not authenticated screens and should be used on the screens out of the app.
 
-## Example of a screen using @akalli/components
+### Example of a screen using @akalli/components
 
 Example:
 
