@@ -1,8 +1,8 @@
 {
-  "name": "@akalli/create-akalli-app",
+  "name": "create-akalli-app",
   "description": "A starter kit for creating Akalli apps",
   "bin": "./bin/akalli-cli.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "node_modules/expo/AppEntry.js",
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
