@@ -8,17 +8,17 @@ This is a framework that uses a colection of libraries to solve the most common 
 
 ## Libraries available:
 
-- **@akalli/state** - Used to manage state and persistence with redux toolkit.
+- [**@akalli/state**](https://github.com/akallidreams/state) - Used to manage state and persistence with redux toolkit.
 
-- **@akalli/navigation** - Easier way to implement routes using react-navigation.
+- [**@akalli/navigation**](https://github.com/akallidreams/navigation) - Easier way to implement routes using react-navigation.
 
-- **@akalli/components** - Smart components that makes easier and descriptive the construction of UIs.
+- [**@akalli/components**](https://github.com/akallidreams/components) - Smart components that makes easier and descriptive the construction of UIs.
 
-- **@akalli/icons** - Some icons available to use, following our design system.
+- [**@akalli/icons**](https://github.com/akallidreams/icons) - Some icons available to use, following our design system.
 
 ## Instalation
 
-`expo init my-app --template @akalli/create-akalli-app`
+`npx create-akalli-app my-app-name`
 
 ## Archtecture
 

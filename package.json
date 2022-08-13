@@ -2,7 +2,7 @@
   "name": "create-akalli-app",
   "description": "A starter kit for creating Akalli apps",
   "bin": "./bin/akalli-cli.js",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "main": "node_modules/expo/AppEntry.js",
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
@@ -62,7 +62,7 @@
   "dependencies": {
     "@akalli/components": "^0.2.2",
     "@akalli/icons": "^0.0.7",
-    "@akalli/navigation": "^0.1.3",
+    "@akalli/navigation": "^0.1.4",
     "@akalli/state": "^0.0.3",
     "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-native-community/masked-view": "^0.1.11",

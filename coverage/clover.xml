@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660243807210" clover="3.2.0">
-  <project timestamp="1660243807210" name="All files">
+<coverage generated="1660405919143" clover="3.2.0">
+  <project timestamp="1660405919143" name="All files">
     <metrics statements="30" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="7" elements="43" coveredelements="23" complexity="0" loc="30" ncloc="30" packages="12" files="29" classes="29"/>
     <package name="akalli-app">
       <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
