@@ -2,7 +2,7 @@
   "name": "create-akalli-app",
   "description": "A starter kit for creating Akalli apps",
   "bin": "./bin/akalli-cli.js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "node_modules/expo/AppEntry.js",
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
@@ -14,6 +14,7 @@
     "start": "expo start --clear --dev-client",
     "expo:go": "expo start --clear",
     "android": "expo start --android",
+    "dict": "node runDict.js",
     "commit": "git-cz",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -31,7 +32,8 @@
     "build:dev": "eas build --profile development",
     "buid:android": "eas build --platform android",
     "manage:expo": "expo credentials:manager",
-    "build:internal": "eas build --profile preview --platform android"
+    "build:internal": "eas build --profile preview --platform android",
+    "mirror": "scrcpy"
   },
   "jest": {
     "preset": "jest-expo",
@@ -60,9 +62,9 @@
     ]
   },
   "dependencies": {
-    "@akalli/components": "^0.2.2",
+    "@akalli/components": "^1.0.2",
     "@akalli/icons": "^0.0.7",
-    "@akalli/navigation": "^0.1.4",
+    "@akalli/navigation": "^0.1.5",
     "@akalli/state": "^0.0.3",
     "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-native-community/masked-view": "^0.1.11",

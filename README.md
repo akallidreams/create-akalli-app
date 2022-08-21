@@ -36,27 +36,6 @@ The `features` folder is were you gonna work more. It subdivides in 3 independen
 2. Assistant - Has the assistant screens, like `account`, `therms` and etc
 3. Auth - Has the not authenticated screens and should be used on the screens out of the app.
 
-### Example of a screen using @akalli/components
-
-Example:
-
-```tsx
-import { HSection, Text } from "@akalli/components";
-
-export const MyComponent = () => {
-  return (
-    <HSection bg="secondary" mt="10px">
-      <Text color="grey" fontSize="lg">
-        My text
-      </Text>
-      <Text color="primary" fontSize="14px">
-        My text
-      </Text>
-    </HSection>
-  );
-};
-```
-
 ## Scripts
 
 This template has EAS configuration set for expo projects. If you run `npm start` you gonna run the `expo start --clear --dev-client` and will only work if you generate a build and install the app using `npm run build:dev`.
