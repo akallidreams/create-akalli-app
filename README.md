@@ -8,13 +8,14 @@ This is a framework that uses a colection of libraries to solve the most common 
 
 ## Libraries available:
 
-- [**@akalli/state**](https://github.com/akallidreams/state) - Used to manage state and persistence with redux toolkit.
-
 - [**@akalli/navigation**](https://github.com/akallidreams/navigation) - Easier way to implement routes using react-navigation.
 
 - [**@akalli/components**](https://github.com/akallidreams/components) - Smart components that makes easier and descriptive the construction of UIs.
 
 - [**@akalli/icons**](https://github.com/akallidreams/icons) - Some icons available to use, following our design system.
+
+~~[**@akalli/state**](https://github.com/akallidreams/state) - Used to manage state and persistence with redux toolkit.~~
+_PS: This library is under review for considerations and will be choose if is necessary to exist._
 
 ## Instalation
 

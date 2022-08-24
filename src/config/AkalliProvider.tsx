@@ -1,8 +1,7 @@
-import { AkState } from "@akalli/state";
+import { MyThemeProvider } from "@akalli/components";
+import { DictProvider } from "@akalli/navigation";
 import { ReactNode } from "react";
-import { Provider } from "react-redux";
-import { ThemeProvider } from "styled-components/native";
-import { store, persistor } from "./store";
+import { mainDict } from "src/features/main";
 import { theme } from "./theme";
 
 export const AkalliProvider = ({
@@ -11,13 +10,12 @@ export const AkalliProvider = ({
 }: {
   children: ReactNode;
   test?: boolean;
-}) =>
-  test ? (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </Provider>
+}) => {
+  return test ? (
+    <DictProvider dicts={{ main: mainDict }}>
+      <MyThemeProvider theme={theme}>{children}</MyThemeProvider>
+    </DictProvider>
   ) : (
-    <AkState.StateProvider store={store} persistor={persistor}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </AkState.StateProvider>
+    <MyThemeProvider theme={theme}>{children}</MyThemeProvider>
   );
+};

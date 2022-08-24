@@ -18,4 +18,5 @@ export const theme: ITheme = {
     lg: 22,
     xl: 28,
   },
+  variants: {},
 };

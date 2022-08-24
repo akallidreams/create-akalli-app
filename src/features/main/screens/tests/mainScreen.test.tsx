@@ -1,5 +1,5 @@
 import { Main } from "../";
-import { render, screen } from "@testing-library/react-native/pure";
+import { render, screen, act } from "@testing-library/react-native/pure";
 import "@testing-library/jest-native/extend-expect";
 import React from "react";
 import { AkalliProvider } from "@config/AkalliProvider";
@@ -16,17 +16,26 @@ jest.mock("redux-persist", () => {
 
 describe("should test Main Screen", () => {
   beforeEach(() => {
-    render(
-      <AkalliProvider test>
-        <Main />
-      </AkalliProvider>
-    );
-  }),
-    it("renders without crashing", () => {
-      expect(screen).toBeTruthy();
-    });
+    // FIXME: fix this workaround
+    const RenderScreen = async () =>
+      await act(async () => {
+        return render(
+          <AkalliProvider>
+            <Main />
+          </AkalliProvider>
+        );
+      });
+
+    return RenderScreen();
+  });
+
+  it("renders without crashing", () => {
+    expect(screen).toBeTruthy();
+  });
   it("should render the title value", () => {
-    expect(screen.queryByTestId("dti-title")).toHaveTextContent("Logged in");
+    expect(screen.queryByTestId("dti-conditional-text")).toHaveTextContent(
+      "I am shown because we are speaking in english"
+    );
     expect(screen.toJSON()).toMatchSnapshot();
   });
 });
